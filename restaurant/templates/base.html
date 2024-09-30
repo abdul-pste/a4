@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Best Ramen in Town</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <nav>
+        <a href="/restaurant/main.html">home</a>
+        <a href="order.html">order</a>
+        <a href="confirmation.html">confirm</a>
+        <!--<a href="order.html">Order</a>
+        <a href="confirmation.html">Confirmation</a>-->
+    </nav>
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Naruto Meals. All rights reserved.</p>
+        <p>Follow us on <a href="#" style="color: #ffb347;">Instagram</a> | <a href="#" style="color: #ffb347;">Facebook</a></p>
+    </footer>
+
+</body>
+</html>
